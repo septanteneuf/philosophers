@@ -6,7 +6,7 @@
 /*   By: bbourcy <bbourcy@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 14:09:58 by bbourcy           #+#    #+#             */
-/*   Updated: 2022/10/31 12:29:00 by bbourcy          ###   ########.fr       */
+/*   Updated: 2022/11/02 13:30:29 by bbourcy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_atoi(const char *str)
 	return (sum);
 }
 
-//	verif si argv est num
+//	check argv as numeric
 int	numeric(char **argv, int i, int j)
 {
 	while (argv[j])

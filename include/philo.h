@@ -6,7 +6,7 @@
 /*   By: bbourcy <bbourcy@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 13:29:33 by bbourcy           #+#    #+#             */
-/*   Updated: 2022/10/31 13:33:09 by bbourcy          ###   ########.fr       */
+/*   Updated: 2022/11/02 13:32:29 by bbourcy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,19 +21,19 @@
 # include <limits.h>
 
 /*	struct s_arg explications
-//	arg after ./philo
-//	nb of philo
-//	time to die en milliseconds
-//	time to eat en milliseconds
-//	time to sleep en milliseconds
-//	must eat m_eat times
-//	start time en milliseconds
-//	ecrit mutex
-//	when a philosopher ate m_eat times : nb_p_finish++
-//	0 if none philosopher is dead, 1 if a philosopher
-	is dead, 2 if all philosophers ate m_eat times
+		arg after ./philo
+		nb of philo
+		time to die en milliseconds
+		time to eat en milliseconds
+		time to sleep en milliseconds
+		must eat m_eat times
+		start time en milliseconds
+		ecrit mutex
+		when a philosopher ate m_eat times : nb_p_finish++
+		0 if none philosopher is dead, 1 if a philosopher
+		is dead, 2 if all philosophers ate m_eat times
 */
-typedef struct s_arg
+typedef struct	s_arg
 {
 	int						total;
 	int						die;
@@ -50,15 +50,15 @@ typedef struct s_arg
 }							t_arg;
 
 /*	struct s_philo explications
-	id of the philosopher
-	thread id
-	id of the thread monitoring death
-	right fork mutex
-	left fork mutex
-	pointer to structure with all arguments (pointer on a)
-	time of the last dinner in milliseconds
-	number of dinners (each time the philosopher eats nb_eat++)
-	1 when a philosopher ate m_eat times, if not, 0
+		id of the philosopher
+		thread id
+		id of the thread monitoring death
+		right fork mutex
+		left fork mutex
+		pointer to structure with all arguments (pointer on a)
+		time of the last dinner in milliseconds
+		number of dinners (each time the philosopher eats nb_eat++)
+		1 when a philosopher ate m_eat times, if not, 0
 */
 typedef struct s_philo
 {
@@ -74,8 +74,8 @@ typedef struct s_philo
 }							t_philo;
 
 /* 	struct s_p explications
-	structure for each philosopher
-	structure with arguments, same for all philosophers	
+		structure for each philosopher
+		structure with arguments, same for all philosophers	
 */
 typedef struct s_p
 {

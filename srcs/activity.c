@@ -6,13 +6,13 @@
 /*   By: bbourcy <bbourcy@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/23 12:19:49 by bbourcy           #+#    #+#             */
-/*   Updated: 2022/10/31 12:11:31 by bbourcy          ###   ########.fr       */
+/*   Updated: 2022/11/02 13:40:35 by bbourcy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../include/philo.h"
 
-//	ecris le statut du philo en faisant les verif death
+//	print status with actual time 
 void	write_status(char *str, t_philo *ph)
 {
 	long int		time;
@@ -26,7 +26,7 @@ void	write_status(char *str, t_philo *ph)
 	}
 }
 
-//	affiche phili think ou sleep
+//	
 void	sleep_think(t_philo *ph)
 {
 	pthread_mutex_lock(&ph->pa->write_mutex);
@@ -38,7 +38,7 @@ void	sleep_think(t_philo *ph)
 	pthread_mutex_unlock(&ph->pa->write_mutex);
 }
 
-//	affiche activite fork ou eat
+//	
 void	activity(t_philo *ph)
 {
 	pthread_mutex_lock(&ph->l_f);
