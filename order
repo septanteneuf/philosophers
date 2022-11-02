@@ -1,0 +1,14 @@
+if (!(parse_args(argc, argv, &p))) 
+	return (ft_exit("Invalid Arguments\n"));
+//	check les arguments passes apres ./philo
+//	sinon retourner "invalid arguments"
+
+p.ph = malloc(sizeof(t_philo) * p.a.total);
+//	malloc le nb de philo entres en argv
+
+if (!p.ph)
+	return (ft_exit("Malloc returned NULL\n"));
+//	si pas de philo malloc vide
+
+if (!initialize(&p) || !threading(&p))
+//	si mauvaises initialisations tout free
