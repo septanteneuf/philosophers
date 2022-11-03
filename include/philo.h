@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bbourcy <bbourcy@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/31 13:29:33 by bbourcy           #+#    #+#             */
-/*   Updated: 2022/11/02 13:32:29 by bbourcy          ###   ########.fr       */
+/*   Created: 2022/07/22 13:29:33 by bbourcy           #+#    #+#             */
+/*   Updated: 2022/11/03 12:45:18 by bbourcy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@
 # include <pthread.h>
 # include <limits.h>
 
-/*	struct s_arg explications
-		arg after ./philo
+/*	struct s_arg: arg after ./philo
 		nb of philo
 		time to die en milliseconds
 		time to eat en milliseconds
@@ -31,7 +30,7 @@
 		ecrit mutex
 		when a philosopher ate m_eat times : nb_p_finish++
 		0 if none philosopher is dead, 1 if a philosopher
-		is dead, 2 if all philosophers ate m_eat times
+			is dead, 2 if all philosophers ate m_eat times
 */
 typedef struct	s_arg
 {

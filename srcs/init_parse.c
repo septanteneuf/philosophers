@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bbourcy <bbourcy@student.42lausanne.ch>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/23 14:09:58 by bbourcy           #+#    #+#             */
-/*   Updated: 2022/11/02 13:30:29 by bbourcy          ###   ########.fr       */
+/*   Created: 2022/07/21 14:09:58 by bbourcy           #+#    #+#             */
+/*   Updated: 2022/11/03 12:46:34 by bbourcy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int	numeric(char **argv, int i, int j)
 	return (1);
 }
 
-//	check les arg et leur nombre
+//	parse arguments according 
 int	parse_args(int argc, char **argv, t_p *p)
 {
 	if ((argc == 5 || argc == 6) && numeric(argv, 0, 1))
@@ -55,7 +55,7 @@ int	parse_args(int argc, char **argv, t_p *p)
 		if (argc == 6)
 			p->a.m_eat = ft_atoi(argv[5]);
 		if (p->a.total <= 0 || p->a.die <= 0 || p->a.eat <= 0 \
-			|| p->a.sleep <= 0)
+			|| p->a.sleep <= 0 /*|| p->a.m_eat == 0*/)
 			return (0);
 		return (1);
 	}
